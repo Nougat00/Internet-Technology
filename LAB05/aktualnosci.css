@@ -1,0 +1,28 @@
+h2{
+    background-color: lightgray;
+    clear: left;
+    width: 100%;
+    text-align: left;
+    top: 20px;
+    bottom: 20px;
+}
+
+h2 time{
+    right: 10px;
+    position: absolute;
+    color: gray;  
+    clear: right; 
+}
+
+article img{
+    clear: left;
+    float: left;
+    margin: 5px;
+
+}
+article::after{
+    clear: left;
+    content: none;
+    display: flex;
+    
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:bio="http://purl.org/vocab/bio/0.1/"
+    xmlns:dc="http://purl.org/dc/terms/">
+    <foaf:Person rdf:ID="ttestowy">
+        <foaf:name>Test testowy</foaf:name>
+        <foaf:gender>Male</foaf:gender>
+        <foaf:givenname>Test</foaf:givenname>
+        <foaf:family_name>Testowy</foaf:family_name>
+        <bio:Graduation>
+            <foaf:Organization rdf:ID="testschool">
+                <foaf:name>Szkoła podtawowa nr 21 w Testowni im. Testu Testowego</foaf:name>
+                <foaf:homepage rdf:resource="https://szkolatestow.online/" />
+                <dc:date>2013</dc:date>
+            </foaf:Organization>
+        </bio:Graduation>
+        <bio:Graduation>
+            <foaf:Organization rdf:ID="pja">
+                <foaf:name>Wyższa szkoła robienia testów</foaf:name>
+                <foaf:homepage rdf:resource="https://gdansk.pja.edu.pl/pl/" />
+                <dc:date>2019</dc:date>
+            </foaf:Organization>
+        </bio:Graduation>
+        <bio:position>student</bio:position>
+    </foaf:Person>
+</rdf:RDF>

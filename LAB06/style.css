@@ -1,0 +1,112 @@
+#container {
+  display: grid;
+  grid-template-areas: "header header header header" "nav    nav    nav    nav" "left main main important" "footer footer footer footer";
+  grid-template-columns: 20% 30% 30% 20%;
+}
+@media screen and (max-width: 800px) {
+  #container {
+    grid-template-areas: "header header" "nav    nav" "main main" "left  important" "footer footer";
+    grid-template-columns: 50% 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #container {
+    grid-template-areas: "header" "nav" "main" "left" "important" "footer";
+    grid-template-columns: 100%;
+  }
+}
+#container header {
+  grid-area: header;
+  background-color: #ff7373;
+}
+#container header img {
+  display: block;
+  margin: auto;
+}
+#container nav {
+  grid-area: nav;
+  font-family: 'Times New Roman';
+  font-size: 11pt;
+}
+#container nav ul {
+  list-style-type: none;
+  margin: 0;
+  background-image: url("images/bg_nav.png");
+  height: 28px;
+  background-size: contain;
+}
+#container nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0.5em 0.15em;
+  min-width: 100px;
+  text-align: center;
+  border-right: 2px solid black;
+}
+@media (max-width: 600px) {
+  #container nav ul li {
+    border-right: none;
+  }
+}
+#container nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+#container nav ul li:hover {
+  background-image: url("images/bg_nav_h.png");
+}
+@media (max-width: 600px) {
+  #container nav ul {
+    background-image: url("");
+    padding-left: 0;
+    padding-right: 4px;
+  }
+  #container nav ul li {
+    text-align: center;
+    display: block;
+    float: left;
+    width: 100%;
+    background-image: url("images/bg_nav.png");
+    background-size: contain;
+  }
+}
+#container #left {
+  grid-area: left;
+  text-align: left;
+  padding-left: 1em;
+  background-color: #ffb0b0;
+  font-family: 'Times New Roman';
+  font-size: 11pt;
+}
+#container #left a {
+  color: black;
+}
+#container #main {
+  font-family: 'Times New Roman';
+  font-size: 14pt;
+  grid-area: main;
+  background-color: #ffcfcf;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+#container #important {
+  grid-area: important;
+  padding: 1em;
+  background-color: #ff9c9c;
+}
+#container #important li {
+  list-style: url("images/bullet.png");
+  padding-bottom: 8px;
+}
+#container #important li a {
+  color: black;
+  font-family: 'Times New Roman';
+  font-size: 17pt;
+}
+#container footer {
+  grid-area: footer;
+  background-color: #ff7373;
+  text-align: center;
+}

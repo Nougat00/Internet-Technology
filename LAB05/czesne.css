@@ -1,0 +1,19 @@
+table {
+    position: relative;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead {
+    background: lightgray;
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+}
+
+th:first-child {
+    background-color: aliceblue;
+    position: sticky;
+    z-index: 2;
+    left: 0px;
+}

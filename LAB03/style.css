@@ -1,0 +1,74 @@
+@media print {
+    nav {
+        display: none;
+    }
+}
+
+body {
+    padding-left: 16em;
+    font-family: Georgia, "Times New Roman",
+        Times, serif;
+    color: purple;
+    background-color: #88B04B
+}
+
+h1 {
+    font-family: Helvetica, Geneva, Arial,
+        SunSans-Regular, sans-serif;
+    padding-top: 1em;
+    border-bottom: thick purple dotted
+}
+
+[id="2"] ol {
+    list-style-type: upper-roman;
+}
+
+.author {
+    text-transform: capitalize;
+}
+
+.title {
+    font-style: italic;
+}
+
+nav {
+    position: absolute;
+    top: 2em;
+    left: 0em;
+    width: 14em;
+    background: #cefa8c;
+    margin: 0.5em 0;
+    padding: 0.4em;
+    border-right: 1em solid rgba(0, 0, 0, 0.514)
+}
+
+nav li {
+    background: white;
+    padding: 0.2em;
+    margin-top: 0.2em;
+    border-right: 0.3em solid black;
+    display: block;
+}
+
+nav ul li ul{
+    display: none;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+
+a:link {
+    color: rgb(73, 78, 29)
+}
+
+a:visited {
+    color: purple
+}
+
+footer {
+    margin-top: 2em;
+    padding-top: 0em;
+    border-top: thick purple dotted
+}

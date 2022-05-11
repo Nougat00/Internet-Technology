@@ -1,0 +1,41 @@
+<header>
+<h1><a href="../../">Sklep Ropuszka</a></h1>
+</header>
+<%- include("nav_categories.ejs", {className: "small"}) %>
+<section>
+<h2><%= category %></h2>
+<table>
+    <tr>
+        <th>Nazwa</th>
+        <th>Cena</th>
+    </tr>
+    <% for(var i=0; i<products.length; i++) {%>
+    <tr>
+        <td>
+            <span class="product"><%= products[i][1] %></span>
+        </td>
+        <td>
+            <span class='price'><%= products[i][0] %></span>
+        </td>
+    </tr>
+    <% } %>
+</table>
+<form method="post">
+    <p>
+        <span>Product: </span><input name='product'  required='required' />
+    </p>
+    <p>
+        <span>Cena: </span><input name='price'  required='required' />
+    </p>
+    <p>
+        <span>Login: </span><input name='login' required="required">
+    </p>
+    <p>
+        <span>Hasło: </span><input name='haslo' type="password" required="required">
+    </p>
+    <p>
+        <input type='submit' value="Dodaj produkt" />
+    </p>
+</form>
+</section>
+

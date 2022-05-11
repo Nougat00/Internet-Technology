@@ -1,0 +1,48 @@
+
+ul{
+    list-style-type: none;
+}
+.ikona{
+    cursor: pointer;
+}
+
+.zamkniety .ikona{
+    background-image: url("icons.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    float: left;
+    width: 16px;
+    height: 16px;
+    padding: 1px;
+}
+.otwarty .zamkniety .ikona{
+    background-image: url("icons.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    float: left;
+    width: 16px;
+    height: 16px;
+    padding: 1px;
+}
+.otwarty .lisc .ikona{
+    background-image: url("icons.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    float: left;
+    width: 16px;
+    height: 16px;
+    padding: 1px;
+}
+.otwarty .ikona {
+    background-image: url("icons.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    width: 16px;
+    height: 16px;
+    padding: 1px;
+}
+
+.tekst {
+	margin-left: 18px;
+}

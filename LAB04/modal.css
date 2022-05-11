@@ -1,0 +1,15 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boks{
+    z-index: 1;
+    background: #13b343;
+    opacity: 50%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}

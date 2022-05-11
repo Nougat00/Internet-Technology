@@ -1,0 +1,74 @@
+#grid-container {
+    width: 50%;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    background-color: red;
+    text-emphasis-color: white;
+    height: 75px;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    display: inline-flex;
+    padding-top: 30px;
+    padding-right: 15px;
+}
+
+#baner, #rekrutacja {
+    display: inline-block;
+}
+
+#baner {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#rekrutacja img {
+    display: flex;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#wi, #wsnm, #important {
+    float: left;
+    width: 30%;
+}
+
+#current {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+#current img {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: red;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}

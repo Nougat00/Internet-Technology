@@ -1,0 +1,44 @@
+header {
+    counter-reset: rozdzial;
+}
+
+article {
+    counter-reset: rysunek podrozdzial def;
+}
+
+h2:before {
+    content: "Rozdział "counter(rozdzial) ". ";
+    counter-increment: rozdzial;
+}
+
+h3:before {
+    content: counter(rozdzial) "."counter(podrozdzial) ". ";
+    counter-increment: podrozdzial;
+}
+
+.theorem:before {
+    font-weight: bold;
+    content: "Twierdzenie "counter(rozdzial) "."counter(def) ". ";
+    counter-increment: def;
+}
+
+.definition:before {
+    font-weight: bold;
+    content: "Definicja "counter(rozdzial) "."counter(def) ". ";
+    counter-increment: def;
+}
+
+.proof:before {
+    font-style: italic;
+    content: "Dowód. "
+}
+
+figcaption {
+    font-style: italic;
+}
+
+figcaption:before {
+    font-style: normal;
+    content: "Rysunek "counter(rysunek) ". ";
+    counter-increment: rysunek;
+}
